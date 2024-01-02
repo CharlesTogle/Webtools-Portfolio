@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One:wght@400&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+
+    background-color: black;
+    overflow-x: hidden;
+    background: url(hobbies-interest/bg.png) ;
+    background-size: cover;
+    background-repeat: infinite;
+    background-color: black;
+
+}
+
+.header {
+
+    
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    width: 100vw;
+}
+
+.name {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 60px;
+    color: white;
+}
+
+.name h1 {
+
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.name p {
+
+    font-size: 20px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.nav a {
+
+    align-items: center;
+    height: 100%;
+    display: flex;
+    text-wrap: nowrap;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    border: 5px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.nav a:hover {
+
+    
+    text-decoration: underline;
+
+
+}
+
+.nav {
+
+    display: flex;
+    padding-bottom: 40px;
+    width: 40%;
+    justify-content: space-between;
+    margin: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.main-content{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 20vh;
+    
+}
+
+.heading{
+
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin-block: 20vh;
+    margin-bottom: 17vh;
+    padding-block: 2rem;
+}
+
+.heading h1{
+
+    font-size: 64px;
+    font-weight: 400;
+    font-family: 'Krona One', sans-serif;
+    
+    
+}
+
+.heading p{
+
+    font-family: 'Krona One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+
+.interest, .hobbies{
+
+    text-shadow: 2px 8px 26.2px rgba(255, 252, 252, 0.57);
+    margin-block: 13vh;
+}
+
+.interest>h1, .hobbies>h1{
+
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+.interest>p, .hobbies>p{
+
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+
+
+}
+
+
+.images > img{
+
+    position: absolute;
+    z-index: -2;
+    top: 100%;
+    left: 40%;
+    opacity: 0.8;
+
+}
+
+img.bdmntn{
+    top: 90%;
+    left: 10%;
+    animation-name: image-float;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.coding{
+    top: 40%;
+    left: 20%;
+    animation-name: image-float;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.controller{
+    top: 130%;
+    left: 80%;
+    animation-name: image-float3;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.dumbell{
+    top: 60%;
+    left: 80%;
+    transform: rotate(30deg);
+    animation-name: image-float2;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.math{
+    top: 200%;
+    left: 10%;
+    width: 10rem;
+    animation-name: image-float3;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+    
+}
+
+img.hutao{
+
+    top: 280%;
+    left: 40%;
+    animation-name: image-float4;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.planet{
+
+    top: 180%;
+    left: 80%;
+    animation-name: image-float2;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.PC{
+
+    top: 150%;
+    left: 10%;
+    animation-name: image-float4;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.laufey{
+
+    top: 230%;
+    left: 40%;
+    animation-name: image-float3;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.jojo{
+
+    top: 163%;
+    left: 40%;
+    animation-name: image-float2;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.mooskles{
+
+    top: 60%;
+    width: 10rem;
+    animation-name: image-float;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+    
+}
+
+img.headpho{
+
+    width: 10rem;
+    top: 250%;
+    left: -20%;
+    width: 10rem;
+    animation-name: image-float5;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+img.shu{
+
+
+    width: 10rem;
+    top: 200%;
+    left: -15%;
+    width: 10rem;
+    animation-name: image-float4;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.chir{
+
+    width: 6rem;
+    top: 295%;
+    left: -15%;
+    width: 10rem;
+    animation-name: image-float5;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-duration: 2s;
+    animation-timeline: scroll();
+    transform-origin: left;
+
+}
+
+img.rocket{
+
+    width: 9rem;
+    position: absolute;
+    right: -2%;
+    bottom: 70%;
+    animation-name: rocket;
+    animation-timeline: scroll(Y);
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes image-float {
+    to {
+        transform: translateX(310%) rotate(250deg);
+    }
+}
+
+@keyframes image-float2 {
+    to {
+        transform: translateX(200%) rotate(275deg);
+    }
+}
+
+@keyframes image-float3 {
+    to {
+        transform: translateX(250%) rotate(230deg);
+    }
+}
+
+@keyframes image-float4 {
+    to {
+        transform: translateX(275%) rotate(210deg);
+    }
+}
+
+@keyframes image-float5 {
+    to {
+        transform: translateX(330%) rotate(210deg);
+    }
+}
+
+@keyframes rocket {
+    100% {
+        transform: translateY(1430%);
+    }
+}
